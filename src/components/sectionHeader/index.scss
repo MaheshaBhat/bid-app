@@ -1,0 +1,18 @@
+.header-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  .header-text {
+    color: #0a2239;
+    font-size: 24dp;
+    text-align: center;
+  }
+  .bar {
+    height: 8px;
+    width: 70px;
+  }
+}
