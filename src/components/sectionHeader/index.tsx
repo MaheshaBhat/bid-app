@@ -8,7 +8,7 @@ interface Props {
 
 const Header: FunctionComponent<Props> = ({ title, barColor }) => {
   return (
-    <div className="header-container">
+    <div className="sub-header-container">
       <div className="header-text">{title}</div>
       <div className="bar" style={{ backgroundColor: barColor}}/>
     </div>

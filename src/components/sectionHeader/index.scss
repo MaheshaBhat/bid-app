@@ -1,6 +1,5 @@
-.header-container {
+.sub-header-container {
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,11 +7,16 @@
 
   .header-text {
     color: #0a2239;
-    font-size: 24dp;
+    font-size: 24px;
     text-align: center;
+    font-family: Nunito-bold;
+    height: 32px;
+    margin-top: 30px;
   }
   .bar {
-    height: 8px;
+    height: 4px;
     width: 70px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 }
