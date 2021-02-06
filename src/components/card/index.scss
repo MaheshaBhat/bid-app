@@ -1,0 +1,33 @@
+.card-container {
+  width: 335px;
+  border-radius: 6px;
+  border: 1px solid rgba(10, 34, 57, 0.12);
+  box-shadow: 0px 0px 30px rgba(144, 144, 144, 0.4);
+
+  .title {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .sub-title {
+    font-size: 13px;
+    color: rgba(132, 146, 166, 1);
+  }
+
+  .card-header {
+    width: 100%;
+    height: 82px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: rgba(32, 41, 66, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-body {
+    width: 100%;
+    height: 278;
+  }
+}
