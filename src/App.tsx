@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import SectionHeader from './components/sectionHeader';
-import './App.css';
+import React from "react";
+
+import "./App.scss";
+import Header from './components/header';
 
 function App() {
   return (
     <div className="App">
-      <SectionHeader title={'Old Car Available'} barColor={'#3054D6'} />
+      <Header />
     </div>
   );
 }
