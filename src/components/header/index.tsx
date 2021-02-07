@@ -1,4 +1,9 @@
-import React, { CSSProperties, FunctionComponent } from "react";
+import React, {
+  CSSProperties,
+  FunctionComponent,
+  useState,
+  useEffect,
+} from "react";
 import "./index.scss";
 
 import profileTop from "../../assets/profileTop.png";
@@ -9,7 +14,13 @@ interface Props {
   style?: CSSProperties;
 }
 const Header: FunctionComponent<Props> = ({ style = {} }) => {
-  const date:Date=new Date();
+  const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDate(new Date());
+    }, 60000);
+  }, []);
 
   return (
     <div className="header-container" style={style}>
