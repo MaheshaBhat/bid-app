@@ -32,4 +32,13 @@
       -moz-appearance: textfield;
     }
   }
+  .round-button-container {
+    display: flex;
+    //height: 35px;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 20px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(10, 34, 57, 0.12);
+  }
 }

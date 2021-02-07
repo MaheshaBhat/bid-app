@@ -1,0 +1,22 @@
+.round-button {
+  border-radius: 20px;
+  border: 1px solid rgba(231, 235, 238, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .round-button-text {
+    font-size: 13px;
+    font-family: Nunito-medium;
+    color: rgba(10, 34, 57, 1);
+    letter-spacing: -0.13px;
+  }
+}
+
+.active {
+  border-color: rgba(48, 84, 214, 1);
+  .round-button-text {
+    color: rgba(48, 84, 214, 1);
+  }
+}

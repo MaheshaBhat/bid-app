@@ -4,10 +4,14 @@ import "./index.scss";
 
 import SectionHeader from "../sectionHeader";
 import dollar from "../../assets/dollar.svg";
+import RoundButton from "../roundButton";
 
+const FIXED_PRICE='Fixed Price';
+const RATE_NEGOTIABLE='Rate Negotiable';
 
 const BidForm: FunctionComponent = () => {
   const [amount, setAmount] = useState("");
+  const [bidType, setBidType] = useState("");
 
   return (
     <div className="bid-form">
@@ -44,6 +48,20 @@ const BidForm: FunctionComponent = () => {
           }}
           type="number"
           onChange={(e) => setAmount(e.target.value)}
+        />
+      </div>
+      <div className="round-button-container">
+        <RoundButton
+          btnStyle={{ height: "35px", width: "94px", marginRight: "8px" }}
+          label="Fixed Price"
+          onPress={(active) => setBidType(active ? "" : FIXED_PRICE)}
+          active={bidType == "Fixed Price" ? true : false}
+        />
+        <RoundButton
+          btnStyle={{ height: "35px", width: "127px" }}
+          label="Rate Negotiable"
+          onPress={(active) => setBidType(active ? "" :RATE_NEGOTIABLE)}
+          active={bidType == "Rate Negotiable" ? true : false}
         />
       </div>
     </div>
