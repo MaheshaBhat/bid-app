@@ -14,6 +14,7 @@ function App() {
         title={"Old Car Available"}
         barStyle={{ backgroundColor: "#3054D6" }}
       />
+      <BidForm />
       <Button label="Bid Now" btnStyle={{ marginTop: '14px', marginBottom: '36px'}} />
     </div>
   );
