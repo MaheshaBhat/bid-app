@@ -1,3 +1,4 @@
+
 .card-item-container {
   margin-top: 20px;
   display: flex;
@@ -6,14 +7,19 @@
 
   .card-item {
     display: flex;
-    height: 20px;
-    margin-bottom: 10px;
+    //height: 20px;
+    //margin-bottom: 10px;
     font-family: Nunito-bold;
+    align-items: center;
     
     span {
       //margin-right: 13px;
       width: 31px;
       text-align: left;
+      display: flex;
+    }
+    div{
+      font-size: 50%;
     }
   }
 }
@@ -56,7 +62,7 @@
 
 .card-user {
   display: flex;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 
   img {
     padding-left: 20px;

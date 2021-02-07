@@ -3,6 +3,7 @@ import React, { FunctionComponent, useState } from "react";
 import hide from "../../assets/hide.svg";
 import more from "../../assets/more.svg";
 import profile from "../../assets/profile.png";
+import { scale } from "../../constants";
 // import group from "../../assets/group.svg";
 // import truck from "../../assets/truck.svg";
 // import payment from "../../assets/payment.svg";
@@ -17,12 +18,20 @@ const CardDetail: FunctionComponent = () => {
     { label: "Specification 03", icon: "payment" },
   ];
 
+  const offset = scale * 0.023;
   const [isDetailVisible, toggleDetail] = useState(true);
   return (
     <>
       <div className="card-item-container">
-        {specificData.map(({ label, icon }) => (
-          <div className="card-item">
+        {specificData.map(({ label, icon }, i) => (
+          <div
+            className="card-item"
+            key={i}
+            style={{
+              height: `${Math.max(offset, 20)}px`,
+              marginBottom: `${Math.max(offset / 2, 10)}px`,
+            }}
+          >
             <span>
               <img src={images(`./${icon}.svg`).default} />
             </span>

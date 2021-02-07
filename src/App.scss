@@ -24,4 +24,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .app-body {
+    height: 88.2%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+div {
+  box-sizing: border-box;
 }
