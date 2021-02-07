@@ -28,9 +28,9 @@ const Header: FunctionComponent<Props> = ({ style = {} }) => {
         {`${date.getHours()}.${date.getMinutes()}`}
       </div>
       <div className="header-menu">
-        <img src={hamburger} />
-        <img src={hondoLogo} />
-        <img src={profileTop} />
+        <img src={hamburger} alt="" />
+        <img src={hondoLogo} alt="" />
+        <img src={profileTop} alt="" />
       </div>
     </div>
   );

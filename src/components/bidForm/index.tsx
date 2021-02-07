@@ -33,16 +33,16 @@ const BidForm: FunctionComponent = () => {
             amount.toString().replace(",", "").length > 8 ? "left" : "center",
         }}
       >
-        <img src={dollar} />
+        <img src={dollar} alt="" />
         <input
           className="bid-amount"
           value={amount}
           placeholder="0"
           style={{
             width: `${
-              amount != "" ? 32 * amount.toString().replace(",", "").length : 32
+              amount !== "" ? 32 * amount.toString().replace(",", "").length : 32
             }px`,
-            opacity: amount != "" ? 1 : 0.12,
+            opacity: amount !== "" ? 1 : 0.12,
           }}
           type="number"
           onChange={(e) =>setAmount(e.target.value)}
@@ -53,13 +53,13 @@ const BidForm: FunctionComponent = () => {
           btnStyle={{ height: "35px", width: "94px", marginRight: "8px" }}
           label="Fixed Price"
           onPress={(active) => setBidType(active ? "" : FIXED_PRICE)}
-          active={bidType == "Fixed Price" ? true : false}
+          active={bidType === "Fixed Price" ? true : false}
         />
         <RoundButton
           btnStyle={{ height: "35px", width: "127px" }}
           label="Rate Negotiable"
           onPress={(active) => setBidType(active ? "" :RATE_NEGOTIABLE)}
-          active={bidType == "Rate Negotiable" ? true : false}
+          active={bidType === "Rate Negotiable" ? true : false}
         />
       </div>
       {bidType && <div className="edit-text-wrapper">

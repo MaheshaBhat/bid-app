@@ -33,7 +33,7 @@ const CardDetail: FunctionComponent = () => {
             }}
           >
             <span>
-              <img src={images(`./${icon}.svg`).default} />
+              <img src={images(`./${icon}.svg`).default} alt="" />
             </span>
             <div>{label}</div>
           </div>
@@ -54,11 +54,11 @@ const CardDetail: FunctionComponent = () => {
           className="arrow"
           onClick={() => toggleDetail((detail) => !detail)}
         >
-          <img src={isDetailVisible ? hide : more} />
+          <img src={isDetailVisible ? hide : more} alt="" />
         </span>
       </div>
       <div className="card-user">
-        <img src={profile} />
+        <img src={profile} alt="" />
         <div className="title-container">
           <div className="title">{"Rohan Sharma"}</div>
           <div className="sub-title">{"Bangalore, Karnataka"}</div>
