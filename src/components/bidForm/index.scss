@@ -1,9 +1,35 @@
 .bid-form {
-  height: 505px;
+  //height: 505px;
   border: 1px solid rgba(10, 34, 57, 0.12);
   border-radius: 6px;
   width: 335px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .bid-amount-container {
+    display: flex;
+    height: 69px;
+    justify-content: center;
+    .bid-amount {
+      color: rgba(13, 45, 17, 1);
+      display: inline-block;
+      font-size: 50px;
+      font-family: Nunito-bold;
+      width: 50px;
+      border: 0px solid;
+      outline: none;
+      overflow: scroll;
+      caret-color: rgba(48, 84, 214, 1);
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
 }
