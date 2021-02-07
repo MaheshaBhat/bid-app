@@ -1,4 +1,4 @@
-import React, { FunctionComponent, CSSProperties, useState } from "react";
+import React, { FunctionComponent, CSSProperties } from "react";
 
 import "./index.scss";
 
