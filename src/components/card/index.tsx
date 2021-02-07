@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, CSSProperties } from "react";
 import { scale } from "../../constants";
 
 import "./index.scss";
@@ -6,14 +6,17 @@ import "./index.scss";
 interface Props {
   title: string;
   subTitle: string;
+  cardStyle: CSSProperties;
 }
 
-const Card: FunctionComponent<Props> = ({ title, subTitle, children }) => {
+const Card: FunctionComponent<Props> = ({
+  title,
+  subTitle,
+  children,
+  cardStyle,
+}) => {
   return (
-    <div
-      className="card-container"
-      //style={{ height: `${Math.max(scale * 0.34, 296)}px` }}
-    >
+    <div className="card-container" style={cardStyle}>
       <div className="card-header">
         <div className="title">{title}</div>
         <div className="sub-title">{subTitle}</div>

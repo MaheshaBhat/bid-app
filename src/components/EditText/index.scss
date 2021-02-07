@@ -16,17 +16,30 @@
     font-family: Nunito-bold;
     opacity: 1;
     position: absolute;
+    left: 14px;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 
   input {
     width: 90%;
-    height: 90%;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     outline: none;
     border: 0px solid;
     caret-color: rgba(48, 84, 214, 1);
     font-size: 14px;
+    position: absolute;
+    left: 14px;
+    font-family: Nunito-bold;
+    z-index: 1;
   }
-
   input:focus + span,
   input:not(:placeholder-shown) + span {
     opacity: 1;
@@ -34,6 +47,9 @@
     background-color: white;
     font-size: 12px;
     color: rgba(48, 84, 214, 1);
+    padding-left: 14px;
+    padding-right: 14px;
+    align-items: center;
   }
 
   input:not(:focus) + span {
@@ -49,17 +65,8 @@
     -moz-appearance: textfield;
   }
 
-  //   /* For IE Browsers*/
-  //   input:focus + span,
-  //   input:not(:-ms-input-placeholder) + span {
-  //     opacity: 1;
-  //     transform: scale(0.75) translateY(-100%) translateX(-30px);
-  //   }
-
   span {
     font-size: 14px;
-    padding-left: 14px;
-    padding-right: 14px;
     margin-left: 14px;
     margin-right: 14px;
     pointer-events: none;
@@ -70,11 +77,15 @@
     transition-timing-function: ease;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0.5;
+    z-index: 2;
+    display: flex;
+    height: 18px;
+  }
+  .suffix + span{
+    box-sizing: border-box;
+    left: 54px;
   }
 }
-// .edit-text-container:first-child {
-//   margin-top: 32px;
-// }
 
 .edit-text-container:focus-within {
   border: 1px solid rgba(48, 84, 214, 1);
@@ -84,15 +95,7 @@
   }
   .suffix + input {
     box-sizing: border-box;
-    padding-left: 40px;
+    left: 54px;
+    width:80%
   }
 }
-
-// input:focus + span,
-// input:not(:placeholder-shown) + span {
-//   opacity: 1;
-//   transform: scale(0.85) translateY(-65%) translateX(-20px);
-//   background-color: white;
-//   font-size: 12px;
-//   color: rgba(48, 84, 214, 1);
-// }

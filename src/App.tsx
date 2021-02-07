@@ -33,7 +33,11 @@ function App() {
             title={"Old Car Available"}
             barStyle={{ backgroundColor: "#3054D6" }}
           />
-          <Card title={"Honda City"} subTitle={"Posted at Nov, 9.30 AM"}>
+          <Card
+            title={"Honda City"}
+            subTitle={"Posted at Nov, 9.30 AM"}
+            cardStyle={{ marginBottom: "30px" }}
+          >
             <CardDetail />
           </Card>
           <BidForm />

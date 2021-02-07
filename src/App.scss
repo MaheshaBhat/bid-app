@@ -31,7 +31,14 @@ body {
     height: 88.2%;
     width: 100%;
     box-sizing: border-box;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
+  .app-body::-webkit-scrollbar {
+    display: none;
+  }
+  
 }
 div {
   box-sizing: border-box;
