@@ -30,7 +30,7 @@ const BidForm: FunctionComponent = () => {
         className="bid-amount-container"
         style={{
           justifyContent:
-            amount.toString().replace(",", "").length > 7 ? "left" : "center",
+            amount.toString().replace(",", "").length > 8 ? "left" : "center",
         }}
       >
         <img src={dollar} />
@@ -38,9 +38,6 @@ const BidForm: FunctionComponent = () => {
           className="bid-amount"
           value={amount}
           placeholder="0"
-          pattern="[0-9]+([\,][0-9]+)?"
-          min="0"
-          max="5"
           style={{
             width: `${
               amount != "" ? 32 * amount.toString().replace(",", "").length : 32
@@ -48,7 +45,7 @@ const BidForm: FunctionComponent = () => {
             opacity: amount != "" ? 1 : 0.12,
           }}
           type="number"
-          onChange={(e) => setAmount(e.target.value)}
+          onChange={(e) =>setAmount(e.target.value)}
         />
       </div>
       <div className="round-button-container">
@@ -65,7 +62,7 @@ const BidForm: FunctionComponent = () => {
           active={bidType == "Rate Negotiable" ? true : false}
         />
       </div>
-      {bidType && <div>
+      {bidType && <div className="edit-text-wrapper">
         <EditText
           placeholder="Enter Your Mobile Number"
           suffix="+91"

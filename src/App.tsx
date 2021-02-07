@@ -43,7 +43,12 @@ function App() {
           <BidForm />
           <Button
             label="Bid Now"
-            btnStyle={{ marginTop: "14px", marginBottom: "36px" }}
+            btnStyle={{
+              marginTop: "14px",
+              marginBottom: "36px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
           />
         </div>
       </div>
