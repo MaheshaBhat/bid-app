@@ -5,6 +5,7 @@ import "./index.scss";
 import SectionHeader from "../sectionHeader";
 import dollar from "../../assets/dollar.svg";
 import RoundButton from "../roundButton";
+import EditText from "../EditText";
 
 const FIXED_PRICE='Fixed Price';
 const RATE_NEGOTIABLE='Rate Negotiable';
@@ -64,6 +65,15 @@ const BidForm: FunctionComponent = () => {
           active={bidType == "Rate Negotiable" ? true : false}
         />
       </div>
+      {bidType && <div>
+        <EditText
+          placeholder="Enter Your Mobile Number"
+          suffix="+91"
+          type="number"
+        />
+        <EditText placeholder="Enter Your Name *" />
+        <EditText placeholder="Enter Remarks (optional)" />
+      </div>}
     </div>
   );
 };
